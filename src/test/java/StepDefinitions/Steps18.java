@@ -7,7 +7,7 @@ public class Steps18 {
     NurPOMPage elements=new NurPOMPage();
     @And("Check the fields all mandatory fields depend on the client requirements")
     public void checkTheFieldsAllMandatoryFieldsDependOnTheClientRequirements() {
-        System.out.println( elements.getFirstNameInput().getDomProperty("character"));
+        System.out.println( elements.getFirstNameInput().getDomProperty("size"));
         System.out.println( elements.getLastNameInput().getDomProperty("size"));
         System.out.println( elements.getPasswordButton().getDomProperty("size"));
         System.out.println( elements.getConfirmPasswordButton().getDomProperty("size"));
