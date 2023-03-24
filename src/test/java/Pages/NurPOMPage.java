@@ -99,8 +99,33 @@ public class NurPOMPage extends MyMethods {
         return AccountSuccess;
     }
 
+    public WebElement getConfirmPasswordErrorMessage() {
+        return confirmPasswordErrorMessage;
+    }
+
     @FindBy(xpath = "//h1[text()='Account']")
-private WebElement AccountSuccess;
+    private WebElement AccountSuccess;
+    @FindBy(xpath = "//div[@class=\"alert alert-danger alert-dismissible\"]")
+    private WebElement checkBoxErrorMessage;
+    @FindBy(xpath = "//div[text()='Password confirmation does not match password!']")
+    private WebElement confirmPasswordErrorMessage;
+    @FindBy(xpath = "//div[@class='navbar-header']")
+    private WebElement breadCrumbBox;
+    @FindBy(xpath = "//h1[text()='Account']")
+    private WebElement AccountHeaderOnRegisterPage;
+
+    public WebElement getAccountHeaderOnRegisterPage() {
+        return AccountHeaderOnRegisterPage;
+    }
+
+    public WebElement getBreadCrumbBox() {
+        return breadCrumbBox;
+    }
+
+    public WebElement getCheckBoxErrorMessage() {
+        return checkBoxErrorMessage;
+    }
+
     public WebElement getUsedEmailErrorMessage() {
         return usedEmailErrorMessage;
     }
