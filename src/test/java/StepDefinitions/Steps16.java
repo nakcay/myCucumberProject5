@@ -10,7 +10,7 @@ public class Steps16 {
     public void enterNewAccountFieldsWithSomeSpaces() {
         elements.sendKeysMethod(elements.getFirstNameInput(), "no   ur");
         elements.sendKeysMethod(elements.getLastNameInput(), "akc   ay");
-        elements.sendKeysMethod(elements.getEmailInput(), "campus c123@techno.com");
+        elements.sendKeysMethod(elements.getEmailInput(), "campusss c123@techno.com");
         elements.sendKeysMethod(elements.getPhoneInput(), "100200    3000");
         elements.sendKeysMethod(elements.getPasswordButton(), "Na12  3");
         elements.sendKeysMethod(elements.getConfirmPasswordButton(), "Na12  3");
@@ -19,6 +19,6 @@ public class Steps16 {
 
     @Then("user should see the error message under the all fields")
     public void userShouldSeeTheErrorMessageUnderTheAllFields() {
-
+// I just got the error from email box but locating of the message is not possible.
     }
 }
