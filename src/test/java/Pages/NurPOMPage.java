@@ -113,6 +113,18 @@ public class NurPOMPage extends MyMethods {
     private WebElement breadCrumbBox;
     @FindBy(xpath = "//h1[text()='Account']")
     private WebElement AccountHeaderOnRegisterPage;
+    @FindBy(css ="#account > div:nth-child(5) > label ")
+    private WebElement starSignOfRequirement;
+    @FindBy(css ="#account > div:nth-child(5) > label")
+    private WebElement starSign;
+
+    public WebElement getStarSign() {
+        return starSign;
+    }
+
+    public WebElement getStarSignOfRequirement() {
+        return starSignOfRequirement;
+    }
 
     public WebElement getAccountHeaderOnRegisterPage() {
         return AccountHeaderOnRegisterPage;
